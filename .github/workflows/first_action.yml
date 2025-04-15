@@ -4,10 +4,12 @@ on: workflow_dispatch # Events to detonate the workflow
 jobs:
   # Define a name for a job
   first_job:
-    runs-on: ubuntu-lastest #Define the runner of the job (it can be windows, linux or MacOS)
+    runs-on: ubuntu-latest #Define the runner of the job (it can be windows, linux or MacOS)
     # Define steps as using, name and action
     steps:
       - name: Print greeting
-        run: echo "Hello World!"
+        run: |
+          echo "Hello World!"
+          echo "Hola mundo"
       - name: Print goodbye
         run: echo "Goodbye"
