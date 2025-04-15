@@ -1,0 +1,13 @@
+name: Fisrt Workflow
+on: workflow_dispatch # Events to detonate the workflow
+# A workflow has at least one job
+jobs:
+  # Define a name for a job
+  first_job:
+    runs-on: ubuntu-lastest #Define the runner of the job (it can be windows, linux or MacOS)
+    # Define steps as using, name and action
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Goodbye"
